@@ -22,7 +22,7 @@ en_stop = set(nltk.corpus.stopwords.words('english'))
 import gensim
 from gensim.corpora import Dictionary
 
-input_file_path= 'D:/ML/kaggle/'
+input_file_path= './'
 
 
 # run assert test and print error message
@@ -126,4 +126,5 @@ if __name__=='__main__':
     lda_test(ldamodel, topics_dict,11)
     lda_test(ldamodel, topics_dict,12)
     lda_test(ldamodel, topics_dict,13)
+    # file 14 contain false positive test.
     lda_test(ldamodel, topics_dict,14)
